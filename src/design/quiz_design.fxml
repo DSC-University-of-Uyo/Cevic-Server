@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Quiz_designController">
+   <children>
+      <JFXTextArea fx:id="txtQuestion" layoutX="57.0" layoutY="90.0" prefHeight="82.0" prefWidth="464.0" promptText="Type your question..." style="-fx-border-color: #3E2F5B;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></JFXTextArea>
+      <JFXTextField fx:id="txtOptionA" layoutX="95.0" layoutY="201.0" style="-fx-border-color: #3E2F5B;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></JFXTextField>
+      <JFXTextField fx:id="txtOptionB" layoutX="369.0" layoutY="200.0" style="-fx-border-color: #3E2F5B;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></JFXTextField>
+      <JFXTextField fx:id="txtOptionC" layoutX="95.0" layoutY="286.0" style="-fx-border-color: #3E2F5B;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></JFXTextField>
+      <JFXTextField fx:id="txtOptionD" layoutX="369.0" layoutY="286.0" style="-fx-border-color: #3E2F5B;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></JFXTextField>
+      <JFXButton layoutX="73.0" layoutY="353.0" onAction="#sendQuiz" prefHeight="27.0" prefWidth="164.0" style="-fx-border-color: #3E2F5B;" text="send">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <ComboBox fx:id="cmbTime" layoutX="444.0" layoutY="354.0" prefHeight="25.0" prefWidth="137.0" promptText="Set Time in mins">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      
+      <ComboBox fx:id="cmbAnswer" layoutX="312.0" layoutY="354.0" prefHeight="25.0" prefWidth="121.0" promptText="Set Answer">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="40.0" layoutY="197.0" prefHeight="34.0" prefWidth="33.0" text="A">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="40.0" layoutY="283.0" prefHeight="34.0" prefWidth="33.0" text="C">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="312.0" layoutY="283.0" prefHeight="34.0" prefWidth="33.0" text="D">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="312.0" layoutY="197.0" prefHeight="34.0" prefWidth="33.0" text="B">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Pane layoutX="-5.0" layoutY="1.0" prefHeight="65.0" prefWidth="607.0" style="-fx-background-color: #3E2F5B;">
+         <children>
+            <Label alignment="CENTER" layoutX="1.0" prefHeight="65.0" prefWidth="607.0" text="Quiz" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

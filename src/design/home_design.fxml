@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="358.0" prefWidth="510.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Home_designController">
+   <children>
+      <JFXButton fx:id="btnQuizAnalysis" layoutX="339.0" layoutY="171.0" onAction="#analyseResult" prefHeight="98.0" prefWidth="132.0" style="-fx-border-color: #3E2F5B;" text="quiz analysis">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="btnSetQuiz" contentDisplay="CENTER" layoutX="188.0" layoutY="171.0" onAction="#setQuiz" prefHeight="98.0" prefWidth="132.0" style="-fx-border-color: #3E2F5B;" text="set quiz">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="btnMessage" layoutX="37.0" layoutY="171.0" onAction="#messages" prefHeight="98.0" prefWidth="132.0" style="-fx-border-color: #3E2F5B;" text="message(s)">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <TextArea fx:id="incoming" editable="false" layoutY="56.0" prefHeight="344.0" prefWidth="510.0" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font></TextArea>
+      <Pane layoutX="-1.0" layoutY="-2.0" prefHeight="57.0" prefWidth="510.0" style="-fx-background-color: #3E2F5B;">
+         <children>
+            <Label fx:id="lblHead" alignment="CENTER" layoutX="1.0" layoutY="1.0" prefHeight="57.0" prefWidth="510.0" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <ImageView id="image_view" fx:id="backButton" fitHeight="37.0" fitWidth="56.0" layoutX="84.0" layoutY="11.0" onMouseClicked="#goBack" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../img/Long%20Arrow%20Left_32px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutY="335.0" prefHeight="65.0" prefWidth="510.0" style="-fx-background-color: #3E2F5B;">
+         <children>
+            <Label alignment="CENTER" layoutY="6.0" prefHeight="57.0" prefWidth="510.0" text="\@cevic.com" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <ImageView fx:id="imgAttendance" fitHeight="85.0" fitWidth="37.0" layoutX="375.0" layoutY="57.0" onMouseClicked="#generate" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Brief_64px.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Blend />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="imgPause" fitHeight="37.0" fitWidth="50.0" layoutX="453.0" layoutY="57.0" onMouseClicked="#pauseScreen" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Pause_50px_1.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="quizLabel" alignment="CENTER" layoutX="80.0" layoutY="187.0" prefHeight="27.0" prefWidth="46.0" text="0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="taIp" editable="false" layoutX="35.0" layoutY="70.0" prefHeight="89.0" prefWidth="196.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextArea>
+      <Label fx:id="lblAttendance" layoutX="363.0" layoutY="93.0" text="Attendance" />
+      <Label fx:id="lblPause" layoutX="443.0" layoutY="93.0" text="pause/play" />
+   </children>
+</AnchorPane>

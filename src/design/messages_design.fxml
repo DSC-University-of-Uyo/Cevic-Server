@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="429.0" prefWidth="544.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Messages_designController">
+   <children>
+      <TextArea fx:id="txtMessage" layoutY="72.0" prefHeight="358.0" prefWidth="544.0" />
+   </children>
+</AnchorPane>
