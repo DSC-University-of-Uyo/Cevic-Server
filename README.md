@@ -21,8 +21,8 @@ ALTERNATIVELY
 ## Download the bundled file. 
 
 1. Download the already bundled file via this link(https://drive.google.com/file/d/1-jyrLh8kncZysk9XJdL0EB3tfnwQzv-m/view?usp=sharing)
-2. Perform steps 1 and 3 above in "How to run the code".
-3. Launch the executable cevic file.
+2. Extract the zip file into a directory
+3. Launch the executable cevic file (cevic.exe) in the root of the folder.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
